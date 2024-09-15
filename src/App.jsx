@@ -42,7 +42,7 @@ function App() {
     // Message to be sent
     const verificationNumber = Math.floor(100 + Math.random() * 900); // Generates a unique 3-digit number
 
-    const message = `*🌟 Welcome to WebReich IT Solutions! 🌟*
+    const message = `*Elevate Your Business – Innovate, Accelerate, Dominate!*
 
 Hello *${data.name}*, 
 
@@ -62,7 +62,7 @@ We are a community-driven IT solutions provider, empowering businesses with the 
 
 🔔 *Contact Us Anytime:*
 📞 *Phone*: +91-8668722207
-✉️ *Email*: support@webreich.com
+✉️ *Email*: webreichcommunity@gmail.com
 
 Stay connected for exciting offers and services!
 🌐 Visit us: https://webreich.vercel.app/
