@@ -42,36 +42,23 @@ function App() {
     // Message to be sent
     const verificationNumber = Math.floor(100 + Math.random() * 900); // Generates a unique 3-digit number
 
-    const message = `*Elevate Your Business – Innovate, Accelerate, Dominate!*
+  const message = `
+*Collaborate and Elevate Your Hotel Business!*
 
-Hello *${data.name}*, 
+Hello *${data.name}*,
 
-🎉 We are thrilled to have you on board! Here's a summary of your transaction with us:
+I hope you're doing well! I'm *Shriyash* from Akola, Maharashtra, and I run a hospitality business similar to OYO. We’re looking to collaborate with hotels like yours to expand our services and offer more guests a seamless stay experience.
 
-📱 *Mobile Number*: ${data.mobile}
-🏬 *Shop Name*: ${data.shopName}
-💵 *Deposit Amount*: ₹${data.deposit}
-🛒 *Product*: ${data.productName}
+Feel free to check out my portfolio here: *${data.portfolioLink}*.
 
-Your unique verification code is: *${verificationNumber}*
+You can reach me anytime at +91 *${data.mobile}*.
 
-At *WebReich IT Solutions*, we strive to offer top-notch services tailored for you. Whether it’s web development, digital solutions, or cutting-edge IT support, we’ve got you covered!
-
-📢 *About Us:*
-We are a community-driven IT solutions provider, empowering businesses with the latest tech solutions and strategies. Our mission is to deliver excellence through innovation, helping clients unlock new growth opportunities in the digital landscape.
-
-🔔 *Contact Us Anytime:*
-📞 *Phone*: +91-8668722207
-✉️ *Email*: webreichcommunity@gmail.com
-
-Stay connected for exciting offers and services!
-🌐 Visit us: https://webreich.vercel.app/
-
-Thank you for trusting us with your business. We look forward to helping you succeed! 🤝
+Looking forward to connecting and discussing this exciting opportunity!
 
 Best regards,  
-*WebReich IT Solutions Team*
-_“Empowering the Future with Technology”_`;
+*Shriyash*
+`;
+
 
 
 
