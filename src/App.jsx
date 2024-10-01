@@ -50,7 +50,7 @@ Hello *${data.name}*,
 I hope you're doing great! I'm *Shriyash* from Akola, Maharashtra, and I run a hospitality business similar to OYO. We're excited to collaborate with hotels like yours to expand our services and provide guests with a seamless and enjoyable stay experience. 🏨✨
 
 Take a moment to check out my portfolio here: *${data.portfolioLink}*.  
-📞 You can reach me anytime at +91 *${data.mobile}*.
+📞 You can reach me anytime at +91-8668722207, +91-9834153020.
 
 Looking forward to connecting and discussing how we can grow together! 🚀
 
