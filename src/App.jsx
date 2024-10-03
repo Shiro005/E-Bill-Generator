@@ -46,9 +46,36 @@ function MainForm() {
 
   const sendWhatsAppMessage = (data) => {
     const adminNumber = '8668722207';
+<<<<<<< HEAD
     const verificationNumber = Math.floor(100 + Math.random() * 900);
     const message = `Hello ${data.name}, your transaction details...`;
     // const whatsappUrl = `https://api.whatsapp.com/send?phone=91${data.mobile}&text=${encodeURIComponent(message)}`;
+=======
+
+    // Message to be sent
+    const verificationNumber = Math.floor(100 + Math.random() * 900); // Generates a unique 3-digit number
+
+  const message = `
+🌟 *Collaborate and Elevate Your Hotel Business!* 🌟
+
+Hello *${data.name}*,
+
+I hope you're doing great! I'm *Shriyash* from Akola, Maharashtra, and I run a hospitality business similar to OYO. We're excited to collaborate with hotels like yours to expand our services and provide guests with a seamless and enjoyable stay experience. 🏨✨
+
+Take a moment to check out my portfolio here: *${data.portfolioLink}*.  
+📞 You can reach me anytime at +91-8668722207, +91-9834153020.
+
+Looking forward to connecting and discussing how we can grow together! 🚀
+
+Best regards,  
+*WebReich community*
+`; 
+
+
+
+
+    // WhatsApp API URL
+>>>>>>> c9e28e7c3fa0052a5b62a1ad60a6a3707dc8829c
     const whatsappUrl = `https://api.whatsapp.com/send?phone=91${data.mobile}&text=${encodeURIComponent(
       message
     )}`;
