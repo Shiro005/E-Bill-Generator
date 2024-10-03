@@ -45,20 +45,26 @@ function MainForm() {
   const sendWhatsAppMessage = (data) => {
     const message = `
       Hello ${data.name},
-      Thank you for shopping with us! 🎉
+      Thank you for connecting with us! 🎉
 
       Your transaction details:
       - Product: ${data.productName}
       - Amount: ₹${data.amount}
 
       We hope to see you again soon! For more updates, follow us on Instagram:
-      https://instagram.com/yourstore
+      https://www.instagram.com/webreich?igsh=MW84aHZ3eTJ4ZWdheA==
 
-      Subscribe to our YouTube channel for new products and offers:
-      https://youtube.com/yourstore
+      Visit our website for new products and offers:
+      https://webreich.vercel.app/
+
+      Developer team 
+      Shriyash Rulhe 
+      https://shriyash.vercel.app/
+      Akshay Bhaltilak 
+      https://www.akshaybhaltilak.live/
 
       Thanks again!  
-      - YourStore Team
+      - WebReich Community 
     `;
 
     const whatsappUrl = `https://api.whatsapp.com/send?phone=91${data.mobile}&text=${encodeURIComponent(
