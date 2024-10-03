@@ -188,10 +188,10 @@ function MainForm() {
             </ul>
           </div>
         </div>
-        <p className="mt-6 text-indigo-600 text-center">
+        <p className="mt-6 text-gray-800 text-center">
           Get all two products for just ₹1,999 / Month!
         </p>
-        <p className="mt-0 text-indigo-600 text-center">
+        <p className="mt-0 text-gray-800 text-center">
           If you want to make your website then its one-time price is ₹14,999 life-time and maintenance charges is applicable 
         </p>
       </div>
