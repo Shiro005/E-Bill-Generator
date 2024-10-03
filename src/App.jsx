@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
 import { TrashIcon } from '@heroicons/react/20/solid';
-import { saveAs } from 'file-saver';
 import * as XLSX from 'xlsx';
 
 function App() {
@@ -45,37 +44,24 @@ function MainForm() {
   };
 
   const sendWhatsAppMessage = (data) => {
-    const adminNumber = '8668722207';
-<<<<<<< HEAD
-    const verificationNumber = Math.floor(100 + Math.random() * 900);
-    const message = `Hello ${data.name}, your transaction details...`;
-    // const whatsappUrl = `https://api.whatsapp.com/send?phone=91${data.mobile}&text=${encodeURIComponent(message)}`;
-=======
+    const message = `
+      Hello ${data.name},
+      Thank you for shopping with us! 🎉
 
-    // Message to be sent
-    const verificationNumber = Math.floor(100 + Math.random() * 900); // Generates a unique 3-digit number
+      Your transaction details:
+      - Product: ${data.productName}
+      - Amount: ₹${data.amount}
 
-  const message = `
-🌟 *Collaborate and Elevate Your Hotel Business!* 🌟
+      We hope to see you again soon! For more updates, follow us on Instagram:
+      https://instagram.com/yourstore
 
-Hello *${data.name}*,
+      Subscribe to our YouTube channel for new products and offers:
+      https://youtube.com/yourstore
 
-I hope you're doing great! I'm *Shriyash* from Akola, Maharashtra, and I run a hospitality business similar to OYO. We're excited to collaborate with hotels like yours to expand our services and provide guests with a seamless and enjoyable stay experience. 🏨✨
+      Thanks again!  
+      - YourStore Team
+    `;
 
-Take a moment to check out my portfolio here: *${data.portfolioLink}*.  
-📞 You can reach me anytime at +91-8668722207, +91-9834153020.
-
-Looking forward to connecting and discussing how we can grow together! 🚀
-
-Best regards,  
-*WebReich community*
-`; 
-
-
-
-
-    // WhatsApp API URL
->>>>>>> c9e28e7c3fa0052a5b62a1ad60a6a3707dc8829c
     const whatsappUrl = `https://api.whatsapp.com/send?phone=91${data.mobile}&text=${encodeURIComponent(
       message
     )}`;
@@ -87,12 +73,12 @@ Best regards,
     <div className="min-h-screen bg-gradient-to-r from-blue-400 to-purple-500 flex flex-col items-center justify-center p-6">
       <nav className="w-full bg-white shadow-lg">
         <div className="max-w-7xl mx-auto px-4 py-4">
-          <h1 className="text-2xl font-bold text-blue-700">Shop Name X WebReich</h1>
+          <h1 className="text-2xl font-bold text-blue-700">YourStore</h1>
         </div>
       </nav>
 
       <div className="bg-white shadow-lg rounded-lg p-8 w-full max-w-xl mt-8 animate-fade-in">
-        {/* <h2 className="text-3xl font-bold mb-6 text-center">WebReich E-Bill</h2> */}
+        <h2 className="text-3xl font-bold mb-6 text-center">Thank You for Shopping!</h2>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
             <label className="block text-gray-700">Name:</label>
@@ -189,7 +175,7 @@ function DataSaved() {
           <div key={index} className="bg-white p-4 shadow-md rounded-md">
             <p className="font-semibold">Name: {user.name}</p>
             <p>Mobile: {user.mobile}</p>
-            <p>Amount: {user.amount}</p>
+            <p>Amount: ₹{user.amount}</p>
             <p>Product: {user.productName}</p>
             <p>Date: {new Date(user.date).toLocaleString()}</p>
           </div>
